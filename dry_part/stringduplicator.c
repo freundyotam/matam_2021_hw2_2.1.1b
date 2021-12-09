@@ -8,7 +8,7 @@ char *duplicateString(char *s, int times)
     assert(times > 0);
     int len = strlen(s);
     char *out = malloc(len * times);
-    if(out == NULL){
+    if (out == NULL) {
         return NULL;
     }
     char *beginning = out;
@@ -17,5 +17,6 @@ char *duplicateString(char *s, int times)
         strcpy(out, s);
         out = out + len;
     }
+    a();
     return beginning;
 }
